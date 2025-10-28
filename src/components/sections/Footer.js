@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { SocialLinks } from "../SocialLinks";
 import { cn } from "@/lib/utils";
+import { Mail, Linkedin } from "lucide-react"; // ✅ Import Gmail (Mail) + LinkedIn icons
 
 export function Footer({ copyright, logo, links, social, ...rest }) {
   return (
@@ -22,9 +23,15 @@ to-[#9ebcf49e] dark:bg-gradient-to-t dark:from-slate-900 dark:to-slate-800 relat
                 <img src="/logo.png" alt="Logo" className="w-10 h-10" />
                 <h2 className="text-2xl font-semibold">Arivana</h2>
               </div>
-              <p className="text-gray-600 text-lg mb-6">
+              <p className="text-gray-600 text-lg mb-3">
                 Custom software. Built for your vision — by Arivana.
               </p>
+
+              {/* ✅ Added email here */}
+              <p className="text-gray-600 text-lg mb-2">
+                connect.arivana@gmail.com
+              </p>
+
               <p className="text-gray-500 text-lg">© 2025 All rights reserved.</p>
             </div>
 
@@ -42,11 +49,6 @@ to-[#9ebcf49e] dark:bg-gradient-to-t dark:from-slate-900 dark:to-slate-800 relat
               <h3 className="font-semibold mb-3">Contact</h3>
               <ul className="space-y-2 text-gray-600 text-lg">
                 <li><a href="#contact">Schedule a Demo</a></li>
-                <li>
-                  <a href="mailto:connect.arivana@gmail.com" className="hover:underline">
-                    connect.arivana@gmail.com
-                  </a>
-                </li>
               </ul>
             </div>
 
@@ -64,8 +66,24 @@ to-[#9ebcf49e] dark:bg-gradient-to-t dark:from-slate-900 dark:to-slate-800 relat
             <div>
               <h3 className="font-semibold mb-3">Social</h3>
               <ul className="space-y-2 text-gray-600 text-md flex flex-col">
-                <li className="flex items-center gap-2">
-                  <SocialLinks links={social} />
+                <li className="flex items-center gap-4">
+                  {/* ✅ LinkedIn */}
+                  <a
+                    href="https://www.linkedin.com/company/arivana"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 bg-white rounded-full shadow hover:bg-gray-100"
+                  >
+                    <Linkedin className="w-6 h-6 text-gray-800" />
+                  </a>
+
+                  {/* ✅ Gmail */}
+                  <a
+                    href="mailto:connect.arivana@gmail.com"
+                    className="p-2 bg-white rounded-full shadow hover:bg-gray-100"
+                  >
+                    <Mail className="w-6 h-6 text-gray-800" />
+                  </a>
                 </li>
               </ul>
             </div>
