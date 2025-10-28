@@ -14,7 +14,7 @@ to-[#9ebcf49e] dark:bg-gradient-to-t dark:from-slate-900 dark:to-slate-800 relat
     >
       <div className="container px-4 mx-auto">
         <div className="max-w-7xl mx-auto px-6 mt-20 ">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-10 ">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-x-16 gap-y-10 ">
 
             {/* Logo + Info */}
             <div className="lg:col-span-2 ">
