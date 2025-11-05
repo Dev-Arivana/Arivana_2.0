@@ -14,7 +14,6 @@ import {
   ContactSection,
   
 } from "../components/sections";
-import { generateConsultationMailto } from "@/config/email";
 
 import {
   header,
@@ -49,12 +48,12 @@ export default function Home() {
         description="From custom software and mobile apps to SaaS platforms and enterprise IT solutions, we deliver innovation that drives results."
         buttons={[
           {
-            href: generateConsultationMailto(),
+            href: "#contact",
             label: "Book a Free Consultation",
             color: "dark",
           },
           {
-            href: "#",
+            href: "#features",
             label: "Explore Our Services",
             color: "transparent",
             variant: "link",
@@ -139,7 +138,7 @@ export default function Home() {
         buttons={[
           {
             label: "Contact Support",
-            href: "#",
+            href: "#contact",
             color: "primary",
             variant: "link",
             icon: "tabler:arrow-right",
@@ -151,7 +150,7 @@ export default function Home() {
       {/* <CtaSection
         title="Ready to get started?"
         description="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis similique"
-        buttons={[{ label: "Start for Free", href: "#", color: "dark" }]}
+        buttons={[{ label: "Start for Free", href: "#contact", color: "dark" }]}
       /> */}
       <ContactSection />
 

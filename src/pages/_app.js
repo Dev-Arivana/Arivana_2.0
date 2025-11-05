@@ -1,17 +1,13 @@
+import Script from "next/script";
 import "@/styles/globals.css";
 import { Inter, Syne } from "next/font/google";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import Script from "next/script";
+
 import { GoogleAnalytics } from "@next/third-parties/google";
 
-const display = Syne({
-  subsets: ["latin"],
-  variable: "--font-display",
-});
-const body = Inter({
-  subsets: ["latin"],
-  variable: "--font-body",
-});
+const display = Syne({ subsets: ["latin"], variable: "--font-display" });
+const body = Inter({ subsets: ["latin"], variable: "--font-body" });
+
 export default function App({ Component, pageProps }) {
   return (
     <ThemeProvider
