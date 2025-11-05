@@ -100,4 +100,4 @@ The contact form maintains the same design language as the rest of the website:
 - All dependencies are already installed including `lucide-react`
 - The form maintains the same theme and design as the rest of the website
 - **Important**: The `output: 'export'` configuration has been removed from `next.config.mjs` to enable API routes for the contact form
-- To deploy, you'll need a hosting platform that supports Next.js API routes (like Vercel, Netlify with Functions, or a custom Node.js server)
+- To deploy, you'll need a hosting platform that supports Next.js API routes (like Vercel,  with Functions, or a custom Node.js server)

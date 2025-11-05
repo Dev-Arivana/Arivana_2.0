@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { FeatureSection } from "@/components/sections/FeatureSection";
 import Timeline from "@/components/sections/Timeline";
+
 import {
   Header,
   HeroSection,

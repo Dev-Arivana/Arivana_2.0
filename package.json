@@ -1,5 +1,5 @@
 {
-  "name": "windmill",
+  "name": "Arivana",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^16.0.1",
     "@radix-ui/react-accordion": "^1.1.2",
     "clsx": "^2.1.0",
     "framer-motion": "^12.23.24",

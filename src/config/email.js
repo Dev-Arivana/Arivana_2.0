@@ -1,4 +1,4 @@
-// Email Configuration for WindMill
+// Email Configuration for Arivana
 // Update this file with your email address and customize the consultation template
 
 export const emailConfig = {
@@ -6,11 +6,11 @@ export const emailConfig = {
   consultationEmail: "pawankumar9aa@gmail.com",
   
   // Email subject line
-  subject: "Free Consultation Request - WindMill Services",
+  subject: "Free Consultation Request - Arivana Services",
   
   // Email template body
   // Note: %0D%0A represents line breaks in mailto URLs
-  emailTemplate: `Hello WindMill Team,
+  emailTemplate: `Hello Arivana Team,
 
 I am interested in booking a free consultation for your software development services.
 
@@ -29,7 +29,7 @@ Contact Information:
 - Phone: [Your Phone Number]
 - Best Time to Call: [Please specify]
 
-Thank you for your time. I look forward to discussing how WindMill can help bring my project to life.
+Thank you for your time. I look forward to discussing how Arivana can help bring my project to life.
 
 Best regards`
 };
