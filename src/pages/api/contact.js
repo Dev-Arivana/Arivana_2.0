@@ -16,7 +16,7 @@ export default async function handler(req, res) {
       console.error("Google Sheets Script URL is not configured");
       // For development/testing: return success even without Google Sheets
       // In production, you should set up the Google Sheets integration
-      console.log("Development mode: Form submission received but not saved to Google Sheets");
+    
       return res.status(200).json({
         message: "Contact form submitted successfully (development mode - not saved)",
         warning: "Google Sheets integration not configured",

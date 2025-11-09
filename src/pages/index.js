@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { FeatureSection } from "@/components/sections/FeatureSection";
 import Timeline from "@/components/sections/Timeline";
+import BentoGrid from "@/components/sections/BentoGrid";
 
 import {
   Header,
@@ -12,6 +13,7 @@ import {
   LargeFeatureSection,
   CtaSection,
   ContactSection,
+  
   
 } from "../components/sections";
 
@@ -74,6 +76,7 @@ export default function Home() {
         description="We provide end-to-end technology solutions for startups, businesses, and enterprises. Whether you’re building from scratch or scaling your product, we’ve got you covered."
         features={features}
       />
+      <BentoGrid />
       <LargeFeatureSection
         title="Stay on top of your business"
         description="Service Highlights:"
